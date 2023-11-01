@@ -1,5 +1,7 @@
 describe('template spec', () => {
   it('passes', () => {
-    cy.visit('https://example.cypress.io')
-  })
+    cy.visit('https://app.lambus.com/');
+    cy.get('#input-56').type('test-');
+    cy.get('#input-56').type('secret');
+    })
 })

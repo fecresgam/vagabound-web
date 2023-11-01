@@ -1,5 +1,19 @@
 {
+  "name": "vagabound-web",
+  "version": "1.0.0",
+  "description": "Cypress Playground",
+  "scripts": {
+    "cy:open": "cypress open",
+    "test": "cypress run",
+    "test:cloud": "cypress run --record"
+  },
+    "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wlsf82/cypress-from-zero-to-the-cloud.git"
+  },  
   "devDependencies": {
     "cypress": "^13.4.0"
-  }
+  },
+  "author": "Felipe Crespo Gambade <felipecrespo@pm.me>",
+  "homepage": "https://github.com/fecresgam/vagabound-web"
 }
