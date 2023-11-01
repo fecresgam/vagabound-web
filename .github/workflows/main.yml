@@ -12,4 +12,5 @@ jobs:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           LAMBUS_PASSWORD: ${{ secrets.LAMBUS_PASSWORD }}
         with:
-          command: npm run test:cloud
+          # command: npm run test:cloud          
+          command: npm run test
