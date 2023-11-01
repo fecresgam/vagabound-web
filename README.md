@@ -1,2 +1,2 @@
 # vagabound-web
-Cypress Playground
+Cypress Playground.
