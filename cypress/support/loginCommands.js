@@ -1,4 +1,4 @@
-import { LoginPage } from "../pages/LoginPage.js"
+import { LoginPage } from "./pages/LoginPage.js"
 
 const loginPage = new LoginPage()
 Cypress.Commands.add("userLogInWithUsernameAndPassword", (username, password) => {
