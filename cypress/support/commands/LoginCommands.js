@@ -1,7 +1,6 @@
-import { LoginIds } from "../pages/LoginIds.js"
+import { LoginPage } from "../pages/LoginPage.js"
 
-const loginIds = new LoginIds()
-
+const loginPage = new LoginPage()
 Cypress.Commands.add("login", (username, password) => {
     let us = username
     let pw = password
@@ -12,9 +11,9 @@ Cypress.Commands.add("login", (username, password) => {
 
 
     // login
-    cy.get(loginIds.field.username).type(Cypress.env('LAMBUS_USERNAME'));
-    cy.get(loginIds.field.password).type(Cypress.env('LAMBUS_PASSWORD'));
-    cy.get(loginIds.button.logIn).click();
+    cy.get(loginPage.field.username).type(Cypress.env('LAMBUS_USERNAME'));
+    cy.get(loginPage.field.password).type(Cypress.env('LAMBUS_PASSWORD'));
+    cy.get(loginPage.button.logIn).click();
 
     //
     cy.contains('span','FC').click();

@@ -1,4 +1,4 @@
-export class LoginIds {
+export class LoginPage {
     constructor() {
         this.field = {
             username: '#input-56',
